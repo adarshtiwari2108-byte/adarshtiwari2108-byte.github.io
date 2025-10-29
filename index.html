@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alpha Mundeer — Under Maintenance</title>
+  <style>
+    :root {
+      --bg1: #0f1724;
+      --bg2: #7b2ff7;
+      --accent: #ff7a59;
+      --muted: #9aa3b2;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Montserrat", Arial, sans-serif;
+      color: #fff;
+      background: linear-gradient(160deg, var(--bg1), #14213d 40%, #0b1220 60%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.5px;
+      line-height: 1.3;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.6;
+    }
+
+    .main-img {
+      width: 220px;
+      max-width: 70%;
+      margin: 20px 0 40px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .brand-logo {
+      width: 300px;
+      max-width: 80%;
+      height: auto;
+      opacity: 0.9;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .brand-logo:hover {
+      transform: scale(1.05);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 900px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 0.95rem;
+      }
+      .main-img {
+        width: 180px;
+      }
+      .brand-logo {
+        width: 250px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+      .main-img {
+        width: 150px;
+        margin: 15px 0 30px;
+      }
+      .brand-logo {
+        width: 200px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 0.85rem;
+      }
+      .main-img {
+        width: 130px;
+      }
+      .brand-logo {
+        width: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>We’ll Be Back Soon 👕</h1>
+  <p>
+    Our store <strong>Alpha Mundeer</strong> is currently under maintenance.<br>
+    We're upgrading our style and polishing the experience just for you.
+  </p>
+
+  <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="Maintenance Illustration" class="main-img">
+
+  <footer>
+    <img src="logo.png" alt="Alpha Mundeer Logo" class="brand-logo">
+  </footer>
+</body>
+</html>
